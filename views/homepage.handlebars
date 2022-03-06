@@ -1,0 +1,30 @@
+<!-- Loop over each object in the projects array -->
+{{#each books as |book|}}
+  <div class='card mt-5'>
+    <div class=''>
+      <h2>
+                
+        <a target="_blank" href={{book.thumbnailUrl}} style="height: 100rem width: 75rem">
+          <img  src={{book.thumbnailUrl}}>
+        </a>
+        <a href='/book/{{book.id}}'>
+        <br>
+        {{book.title}}
+        </a>
+    
+      </h2>
+        
+      <p>
+        {{book.shortDescription}}
+      </p>
+    
+    </div>
+        {{!-- {{format_date book.date_created}} --}}
+        
+    <div class=''>
+      <p>
+        Author(s): {{book.authors}} 
+      </p>
+    </div>
+  </div>
+{{/each}}
