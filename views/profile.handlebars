@@ -1,50 +1,78 @@
-<section class="authPage">
-<div class='row'>
-  <div>
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
-
-<div class='mt-4'>
+<section class='authPage'>
   <div class='row'>
-    <h3>Add a new book:</h3>
-
-    <form class='form new-project-form'>
-      <div class='form-group'>
-        <label for='book-name'>Book name:</label>
-        <input class='form-input' type='text' id='book-name' name='book-name' />
-      </div>
-      <div class='form-group'>
-        <label for='book-desc'>Book description:</label>
-        <textarea class='form-input' id='book-desc' name='book-desc'></textarea>
-      </div>
-      <div class='form-group'>
-        <button type='submit' class='btn btn-primary'>Create</button>
-      </div>
-    </form>
-  </div>
-  <hr />
-  {{#if books.length}}
-    <div class='project-list'>
-      <h3>My Current Books:</h3>
-      <br />
-
-      {{#each books as |book|}}
-        <div class='row mb-2'>
-          <div class='col-md-8'>
-            <h4><a href='/book/{{book.id}}'>{{book.title}}</a></h4>
-          </div>
-          <div class='col-md-4'>
-            <button
-              class='btn btn-sm btn-danger'
-              data-id='{{book.id}}'
-            >DELETE</button>
-          </div>
-        </div>
-      {{/each}}
+    <div>
+      <h2>Welcome, {{name}}!</h2>
     </div>
-  {{/if}}
+  </div>
 
-</div>
+  <div class='mt-4'>
+    <div class='row'>
+      <h3>Add a new Topic:</h3>
+
+      <form class='form new-project-form'>
+        <div class='form-group'>
+          <label for='book-name'>Topic name:</label>
+          <input
+            class='form-input'
+            type='text'
+            id='book-name'
+            name='book-name'
+          />
+        </div>
+        <div class='form-group'>
+          <label for='book-desc'>Topic description:</label>
+          <textarea
+            class='form-input'
+            id='book-desc'
+            name='book-desc'
+          ></textarea>
+        </div>
+        <div class='form-group'>
+          <label for='book-author'>Author:</label>
+          <textarea
+            class='form-input'
+            id='book-author'
+            name='book-author'
+          ></textarea>
+        </div>
+        <div class='form-group'>
+          <label for='book-desc'>Add an image URL (Optional):</label>
+          <textarea
+            class='form-input'
+            id='img-thumb'
+            name='img-thumb'
+          ></textarea>
+        </div>
+        <div class='form-group'>
+          <button
+            type='submit'
+            class='btn btn-lg btn-primary hvr-pulse animate__animated animate__tada'
+          >Create</button>
+        </div>
+      </form>
+    </div>
+    <hr />
+    {{#if books.length}}
+      <div class='project-list'>
+        <h3>My Current Topics:</h3>
+        <br />
+
+        {{#each books as |book|}}
+          <div class='row mb-2'>
+            <div class='col-md-8'>
+              <h4><a href='/book/{{book.id}}'>{{book.title}}</a></h4>
+            </div>
+            <div class='col-md-4'>
+              <button
+                class='btn btn-sm btn-danger'
+                data-id='{{book.id}}'
+              >DELETE</button>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
+
+  </div>
 </section>
 <script src='./js/profile.js'></script>

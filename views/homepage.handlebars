@@ -1,30 +1,37 @@
 <!-- Loop over each object in the projects array -->
+<br />
+<h1>Current Tech Topics:</h1>
 {{#each books as |book|}}
-  <div class='card mt-5'>
-    <div class=''>
+  <div class='card'>
+    <div>
       <h2>
-                
-        <a target="_blank" href={{book.thumbnailUrl}} style="height: 100rem width: 75rem">
-          <img  src={{book.thumbnailUrl}}>
+
+        <a
+          target='_blank'
+          href={{book.thumbnailUrl}}
+          style='height: 100rem width: 75rem'
+        >
+          <img src={{book.thumbnailUrl}} style='width:150px' />
         </a>
         <a href='/book/{{book.id}}'>
-        <br>
-        {{book.title}}
+          <br />
+          {{book.title}}
         </a>
-    
+
       </h2>
-        
+
       <p>
         {{book.shortDescription}}
       </p>
-    
+
     </div>
-        {{!-- {{format_date book.date_created}} --}}
-        
+
     <div class=''>
       <p>
-        Author(s): {{book.authors}} 
+        Author(s):
+        {{book.authors}}
       </p>
+      <p>Created on: {{format_date book.date_created}}</p>
     </div>
   </div>
 {{/each}}

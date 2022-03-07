@@ -1,49 +1,49 @@
 [
   {
     "user_id": 1,
-    "name": "Sal",
+    "name": "Ernesto",
     "book_id": 1,
     "description": "Good read! Very informative"
   },
   {
-    "user_id": 2,
-    "name": "Terrence",
+    "user_id": 1,
+    "name": "Ernesto",
     "book_id": 3,
     "description": "Bad read! Very poorly written"
   },
   {
-    "user_id": 3,
-    "name": "Arthur",
+    "user_id": 1,
+    "name": "Ernesto",
     "book_id": 4,
     "description": "Decent read, would not read again."
   },
   {
     "user_id": 1,
-    "name": "Thomas",
+    "name": "Ernesto",
     "book_id": 2,
     "description": "Absolutely horrible, do not waste your time"
   },
   {
     "user_id": 1,
-    "name": "Victoria",
+    "name": "Ernesto",
     "book_id": 2,
     "description": "Good read! Very informative"
   },
   {
-    "user_id": 2,
-    "name": "Vanessa",
+    "user_id": 1,
+    "name": "Ernesto",
     "book_id": 4,
     "description": "Bad read! Very poorly read"
   },
   {
-    "user_id": 3,
-    "name": "Roger",
+    "user_id": 1,
+    "name": "Ernesto",
     "book_id": 1,
     "description": "Decent read, would not read again."
   },
   {
     "user_id": 1,
-    "name": "Falcone",
+    "name": "Ernesto",
     "book_id": 2,
     "description": "Absolutely horrible, do not waste your time"
   }
