@@ -10,7 +10,6 @@ This app is a CMS-style blog site similar to a Wordpress site, where developers 
 ## Table of Contents
 
 - [User Story](#userstory)
-- [Demo Video](#demovideo)
 - [Screen Shots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -24,10 +23,6 @@ This app is a CMS-style blog site similar to a Wordpress site, where developers 
 AS A developer who writes about tech
 I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
-
-## Demo Video
-
-[WATCH DEMO VIDEO HERE!](https://drive.google.com/file/d/1NOjgE2IRwyiSbk9x6LTywcplsb6dIEqp/view?usp=sharing)
 
 ## Screenshots
 
