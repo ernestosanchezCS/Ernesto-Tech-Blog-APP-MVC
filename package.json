@@ -1,9 +1,8 @@
 {
+  "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "common": "^0.2.5",
     "connect-session-sequelize": "^7.1.2",
-    "debug": "^4.3.3",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-handlebars": "^6.0.3",
@@ -11,5 +10,23 @@
     "handlebars": "^4.7.7",
     "mysql2": "^2.3.3",
     "sequelize": "^6.17.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "ernesto-tech-blog-app-mvc",
+  "description": "[![Licence : MIT](https://img.shields.io/badge/Licence-MIT-blue.svg)](https://opensource.org/licences/MIT)",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ernestosanchezCS/Ernesto-Tech-Blog-APP-MVC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ernestosanchezCS/Ernesto-Tech-Blog-APP-MVC/issues"
+  },
+  "homepage": "https://github.com/ernestosanchezCS/Ernesto-Tech-Blog-APP-MVC#readme"
 }
