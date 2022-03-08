@@ -31,10 +31,10 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## Screenshots
 
-![Screen Shot](./assets/images/allproducts.png)
-![Screen Shot](./assets/images/allcategories.png)
-![Screen Shot](./assets/images/alltags.png)
-![Screen Shot](./assets/images/postproduct.png)
+![Screen Shot](./public/img/pic1.png)
+![Screen Shot](./public/img/pic2.png)
+![Screen Shot](./public/img/pic3.png)
+![Screen Shot](./public/img/pic4.png)
 
 ## Installation
 
