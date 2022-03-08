@@ -2,49 +2,49 @@
   {
     "user_id": 1,
     "name": "Ernesto",
-    "book_id": 1,
-    "description": "Good read! Very informative"
+    "topic_id": 1,
+    "description": "Great topic! Very informative"
+  },
+  {
+    "user_id": 2,
+    "name": "John",
+    "topic_id": 2,
+    "description": "Bad topic! Very poor application possibilities."
   },
   {
     "user_id": 1,
     "name": "Ernesto",
-    "book_id": 3,
-    "description": "Bad read! Very poorly written"
+    "topic_id": 3,
+    "description": "Decent technology to use, but I would not use it."
+  },
+  {
+    "user_id": 2,
+    "name": "Jane",
+    "topic_id": 4,
+    "description": "Absolutely horrible tech, do not waste your time with it."
+  },
+  {
+    "user_id": 1,
+    "name": "John",
+    "topic_id": 3,
+    "description": "I agree a wonderful tool! Very useful technology"
+  },
+  {
+    "user_id": 2,
+    "name": "Ernesto",
+    "topic_id": 2,
+    "description": "I hate this technology."
   },
   {
     "user_id": 1,
     "name": "Ernesto",
-    "book_id": 4,
-    "description": "Decent read, would not read again."
+    "topic_id": 4,
+    "description": "Personally I love this tech, use it every chance i get."
   },
   {
-    "user_id": 1,
-    "name": "Ernesto",
-    "book_id": 2,
-    "description": "Absolutely horrible, do not waste your time"
-  },
-  {
-    "user_id": 1,
-    "name": "Ernesto",
-    "book_id": 2,
-    "description": "Good read! Very informative"
-  },
-  {
-    "user_id": 1,
-    "name": "Ernesto",
-    "book_id": 4,
-    "description": "Bad read! Very poorly read"
-  },
-  {
-    "user_id": 1,
-    "name": "Ernesto",
-    "book_id": 1,
-    "description": "Decent read, would not read again."
-  },
-  {
-    "user_id": 1,
-    "name": "Ernesto",
-    "book_id": 2,
+    "user_id": 2,
+    "name": "Jane",
+    "topic_id": 1,
     "description": "Absolutely horrible, do not waste your time"
   }
 ]

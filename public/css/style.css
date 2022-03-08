@@ -15,7 +15,8 @@ header {
 
 header > nav > a,
 header > h1 > a,
-#logout {
+#logout,
+h1 {
   color: white;
 }
 
@@ -31,7 +32,7 @@ header > h1 > a,
 .card {
   background-color: rgb(247, 243, 243);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 93%;
+  max-width: 100%;
   text-align: center;
   font-family: arial;
 }

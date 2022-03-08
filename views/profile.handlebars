@@ -1,4 +1,4 @@
-<section class='authPage'>
+<section class='authPage card'>
   <div class='row'>
     <div>
       <h2>Welcome, {{name}}!</h2>
@@ -11,32 +11,32 @@
 
       <form class='form new-project-form'>
         <div class='form-group'>
-          <label for='book-name'>Topic name:</label>
+          <label for='topic-name'>Topic name:</label>
           <input
             class='form-input'
             type='text'
-            id='book-name'
-            name='book-name'
+            id='topic-name'
+            name='topic-name'
           />
         </div>
         <div class='form-group'>
-          <label for='book-desc'>Topic description:</label>
+          <label for='topic-desc'>Topic description:</label>
           <textarea
             class='form-input'
-            id='book-desc'
-            name='book-desc'
+            id='topic-desc'
+            name='topic-desc'
           ></textarea>
         </div>
         <div class='form-group'>
-          <label for='book-author'>Author:</label>
+          <label for='topic-author'>Author:</label>
           <textarea
             class='form-input'
-            id='book-author'
-            name='book-author'
+            id='topic-author'
+            name='topic-author'
           ></textarea>
         </div>
         <div class='form-group'>
-          <label for='book-desc'>Add an image URL (Optional):</label>
+          <label for='topic-desc'>Add an image URL (Optional):</label>
           <textarea
             class='form-input'
             id='img-thumb'
@@ -52,20 +52,20 @@
       </form>
     </div>
     <hr />
-    {{#if books.length}}
+    {{#if topics.length}}
       <div class='project-list'>
         <h3>My Current Topics:</h3>
         <br />
 
-        {{#each books as |book|}}
+        {{#each topics as |topic|}}
           <div class='row mb-2'>
             <div class='col-md-8'>
-              <h4><a href='/book/{{book.id}}'>{{book.title}}</a></h4>
+              <h4><a href='/topic/{{topic.id}}'>{{topic.title}}</a></h4>
             </div>
             <div class='col-md-4'>
               <button
                 class='btn btn-sm btn-danger'
-                data-id='{{book.id}}'
+                data-id='{{topic.id}}'
               >DELETE</button>
             </div>
           </div>

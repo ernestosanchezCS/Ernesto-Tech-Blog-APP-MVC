@@ -18,5 +18,11 @@
     "thumbnailUrl": "https://miro.medium.com/max/700/0*CzE1_rn0FyFjRJW4.jpg",
     "longDescription": "I have really loved learning about ORM. It's really simplified teh way I create queries in SQL!",
     "authors": "John Smith"
+  },
+  {
+    "title": "Mongo DB",
+    "thumbnailUrl": "https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png",
+    "longDescription": "Another type of database, alternative to SQL. Instead of tables and rows used in SQL, Mongo DB represents data as JSON objects. Unlike SQL you don't need to predefine your tables, you can just store JSON objects without predefining.",
+    "authors": "Ernesto"
   }
 ]

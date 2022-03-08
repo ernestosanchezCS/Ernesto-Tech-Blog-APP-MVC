@@ -1,16 +1,15 @@
-<div class='text-center'>
+<div class='card text-center'>
   <h2>{{title}}</h2>
   <a target='_blank' href={{thumbnailUrl}}>
     <img src={{thumbnailUrl}} style='width:150px' />
   </a>
   <p>{{longDescription}}</p>
-  <p>Author(s): {{authors}}</p>
-  <p>Added by: {{name}}</p>
+  <p>Added by: {{authors}}</p>
   <br />
 
   <div>
     {{#if comments.length}}
-      <h3>Book Comments:</h3>
+      <h3>Topic Comments:</h3>
       {{#each comments as |comment|}}
         <div class='mb-2'>
           <div>
@@ -47,6 +46,7 @@
     </form>
   {{else}}
     <a href='/login'>Login to Add a Comment</a>
+    <br />
   {{/if}}
 </div>
 {{#if logged_in}}

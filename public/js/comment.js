@@ -4,13 +4,13 @@ const newFormHandler = async (event) => {
   const description = document.querySelector('#comment-desc').value.trim();
   const name = document.querySelector('#comment-name').value.trim();
   var pathArray = window.location.pathname.split('/');
-  var book_id = pathArray[2];
+  var topic_id = pathArray[2];
   if (description) {
     //need to pass it book_id it is in the url this page is in
     //ideally pass it here so it gets assigned when deconstructed in routes
     const response = await fetch(`/api/comments`, {
       method: 'POST',
-      body: JSON.stringify({ name, description, book_id }),
+      body: JSON.stringify({ name, description, topic_id }),
       headers: {
         'Content-Type': 'application/json',
       },

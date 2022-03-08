@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Book, User, Comment } = require('../models');
+const { Topic, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
-    const bookData = await Book.findAll({
+    const topicData = await Topic.findAll({
       include: [
         {
           model: User,
@@ -15,11 +15,11 @@ router.get('/', async (req, res) => {
     });
 
     // Serialize data so the template can read it
-    const books = bookData.map((book) => book.get({ plain: true }));
+    const topics = topicData.map((topic) => topic.get({ plain: true }));
 
     // Pass serialized data and session flag into template
     res.render('homepage', {
-      books,
+      topics,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -27,24 +27,26 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/book/:id', async (req, res) => {
+router.get('/topic/:id', async (req, res) => {
   try {
-    const bookData = await Book.findByPk(req.params.id, {
+    //this finds all the comments associated with the particular topic
+    //we neeed to find all users associated with particular comments
+    const topicData = await Topic.findByPk(req.params.id, {
       include: [{ model: Comment }],
     });
 
-    const book = bookData.get({ plain: true });
+    const topic = topicData.get({ plain: true });
 
     const userData = await User.findOne({
       where: {
-        id: book.user_id,
+        id: topic.user_id,
       },
     });
 
     const user = userData.get({ plain: true });
 
-    res.render('book', {
-      ...book,
+    res.render('topic', {
+      ...topic,
       ...user,
       logged_in: req.session.logged_in,
     });
@@ -59,7 +61,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Book }],
+      include: [{ model: Topic }],
     });
 
     const user = userData.get({ plain: true });
